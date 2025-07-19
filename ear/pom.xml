@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.lucianobrito.poc</groupId>
+        <artifactId>javaee</artifactId>
+        <version>${revision}</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <artifactId>ear</artifactId>
+    <name>ear</name>
+    <packaging>ear</packaging>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.lucianobrito.poc</groupId>
+            <artifactId>api</artifactId>
+            <version>${revision}</version>
+            <type>war</type>
+        </dependency>
+        <dependency>
+            <groupId>com.lucianobrito.poc</groupId>
+            <artifactId>core</artifactId>
+            <version>${revision}</version>
+            <type>ejb</type>
+        </dependency>
+        <dependency>
+            <groupId>com.lucianobrito.poc</groupId>
+            <artifactId>libs</artifactId>
+            <version>${revision}</version>
+            <type>jar</type>
+        </dependency>
+    </dependencies>
+
+    <profiles>
+        <profile>
+            <id>prod</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                <property>prod</property>
+            </properties>
+        </profile>
+        <profile>
+            <id>local</id>
+            <properties>
+                <property>local</property>
+            </properties>
+        </profile>
+    </profiles>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-ear-plugin</artifactId>
+                <version>3.3.0</version>
+                <configuration>
+                    <defaultLibBundleDir>lib</defaultLibBundleDir> <!-- JARs vão em /lib -->
+                    <modules>
+                        <webModule>
+                            <groupId>com.lucianobrito.poc</groupId>
+                            <artifactId>api</artifactId>
+                            <contextRoot>/</contextRoot>
+                        </webModule>
+                        <ejbModule>
+                            <groupId>com.lucianobrito.poc</groupId>
+                            <artifactId>core</artifactId>
+                        </ejbModule>
+                    </modules>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
