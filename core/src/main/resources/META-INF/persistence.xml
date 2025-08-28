@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<persistence xmlns="https://jakarta.ee/xml/ns/persistence"
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-             xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_2.xsd"
-             version="3.2">
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence
+                                 http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd"
+             version="2.2">
 
-  <persistence-unit name="sitePU" transaction-type="JTA">
-    <jta-data-source>java:/jdbc/SiteDS</jta-data-source>
+    <persistence-unit name="sitePU" transaction-type="JTA">
+        <jta-data-source>java:jboss/datasources/SiteDS</jta-data-source>
 
-    <!-- Liste suas entidades aqui, ou use auto-scan no JBoss -->
-    <!-- <class>com.seuprojeto.entidade.Usuario</class> -->
-
-    <properties>
-      <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"/>
-      <property name="hibernate.default_schema" value="webapp"/>
-      <property name="hibernate.show_sql" value="true"/>
-      <property name="hibernate.format_sql" value="true"/>
-      <property name="hibernate.hbm2ddl.auto" value="update"/>
-    </properties>
-  </persistence-unit>
+        <properties>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"/>
+            <property name="hibernate.default_schema" value="public"/>
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.format_sql" value="true"/>
+            <property name="hibernate.hbm2ddl.auto" value="create"/>
+        </properties>
+    </persistence-unit>
 </persistence>

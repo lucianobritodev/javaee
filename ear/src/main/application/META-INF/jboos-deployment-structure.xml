@@ -1,0 +1,33 @@
+<jboss-deployment-structure>
+    <deployment>
+        <dependencies>
+            <!-- Adicionar dependências internas do JBoss -->
+            <!-- CDI -->
+            <module name="javax.enterprise.api"/>
+
+            <!-- EJB -->
+            <module name="javax.ejb.api"/>
+
+            <!-- Annotations comuns -->
+            <module name="javax.annotation.api"/>
+
+            <!-- Servlet -->
+            <module name="javax.servlet.api"/>
+
+            <!-- CDI Inject -->
+            <module name="javax.inject.api"/>
+
+            <!-- Bean Validation -->
+            <module name="javax.validation.api"/>
+
+            <!-- JTA -->
+            <module name="javax.transaction.api"/>
+
+            <!-- JPA -->
+            <module name="javax.persistence.api"/>
+
+            <!-- JSON-P -->
+            <module name="javax.json.api"/>
+        </dependencies>
+    </deployment>
+</jboss-deployment-structure>

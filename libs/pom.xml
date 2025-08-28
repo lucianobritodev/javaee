@@ -13,16 +13,8 @@
 
     <artifactId>libs</artifactId>
     <name>libs</name>
+    <description>javaee - libs</description>
     <packaging>jar</packaging>
-
-    <dependencies>
-        <dependency>
-            <groupId>jakarta.enterprise</groupId>
-            <artifactId>jakarta.enterprise.cdi-api</artifactId>
-            <version>4.1.0</version>
-            <scope>provided</scope>
-        </dependency>
-    </dependencies>
 
     <build>
         <plugins>

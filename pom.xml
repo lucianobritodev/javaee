@@ -7,17 +7,20 @@
     <groupId>com.lucianobrito.poc</groupId>
     <artifactId>javaee</artifactId>
     <version>${revision}</version>
-    <name>javaee</name>
+    <name>pom</name>
+    <description>javaee - pom</description>
     <packaging>pom</packaging>
 
     <properties>
         <revision>1.0.0</revision><!-- Propagação Nativa de Versão -->
-        <java.version>17</java.version>
+        <javaee.version>8.0.1</javaee.version>
+        <java.version>11</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.target>${java.version}</maven.compiler.target>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <junit.version>5.11.0</junit.version>
         <postgres.version>42.7.7</postgres.version>
+        <jackson.version>2.19.1</jackson.version>
     </properties>
 
     <modules>
@@ -29,21 +32,9 @@
 
     <dependencies>
         <dependency>
-            <groupId>jakarta.platform</groupId>
-            <artifactId>jakarta.jakartaee-core-api</artifactId>
-            <version>11.0.0-M4</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>jakarta.validation</groupId>
-            <artifactId>jakarta.validation-api</artifactId>
-            <version>3.1.0</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>jakarta.jms</groupId>
-            <artifactId>jakarta.jms-api</artifactId>
-            <version>3.1.0</version>
+            <groupId>javax</groupId>
+            <artifactId>javaee-api</artifactId>
+            <version>${javaee.version}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
@@ -59,10 +50,40 @@
             <scope>test</scope>
         </dependency>
         <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>2.0.17</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <version>1.18.38</version>
             <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-annotations</artifactId>
+            <version>${jackson.version}</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.datatype</groupId>
+            <artifactId>jackson-datatype-jsr310</artifactId>
+            <version>${jackson.version}</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>${postgres.version}</version>
+            <scope>runtime</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.modelmapper</groupId>
+            <artifactId>modelmapper</artifactId>
+            <version>3.2.1</version>
+            <scope>compile</scope>
         </dependency>
     </dependencies>
 
