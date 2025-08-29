@@ -2,7 +2,7 @@
 
 ## Descrição
 
-O projeto é uma poc de projeto JavaEE. Esse projeto foi concebido em uma arquitetura monolítica multimódulos contendo diversas tecnologias 
+O projeto é uma poc de projeto Java com JavaEE. Esse projeto foi concebido em uma arquitetura monolítica multimódulos contendo diversas tecnologias 
 consideradas padrão de mercado e amplamente utilizadas em projetos empresariais rodando sobre servidores de aplicações on-premise como JBoss, WildFly, Glassfish, dentre outros.
 
 
@@ -42,7 +42,7 @@ Também foram aplicados soluções de Design Patterns como:
 
 ### Tecnologias
 
-- JavaEE 8 (CDI, EJB, RestEasy, Hibernate)
+- JavaEE 8 (CDI, EJB, JAX-RS/RestEasy, JPA/Hibernate)
 - Java 11
 - JBoss EAP 7.4.x
 - Postgres
