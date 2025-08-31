@@ -2,13 +2,16 @@
 
 ## Descrição
 
-O projeto é uma poc de projeto Java com JavaEE. Esse projeto foi concebido em uma arquitetura monolítica multimódulos contendo diversas tecnologias 
-consideradas padrão de mercado e amplamente utilizadas em projetos empresariais rodando sobre servidores de aplicações on-premise como JBoss, WildFly, Glassfish, dentre outros.
+Esse projeto foi concebido em uma arquitetura monolítica multimódulos contendo diversas tecnologias consideradas padrão de mercado 
+dentro do mundo da tecnologia, pois são amplamente utilizadas em projetos empresariais e corporativos.
+
+Dentro desse projeto Java com JavaEE contém as principais funcionalidades e configurações para gerar um EAR funcional contendo todos os módulos do projeto
+podendo ser disponibilizado em servidores de aplicações on-premise como JBoss, WildFly, Glassfish, dentre outros.
 
 
 ## Design
 
-O projeto ontém 4 módulos onde estão distribuídas as respectivas responsabilidades, sendo eles:
+O projeto contém 4 módulos onde estão distribuídas as respectivas responsabilidades, sendo eles:
 - api (WAR): Responsável por conter os Controladores REST, Filters e configurações da camada de infraestrutura;
 - core (EJB-JAR): Responsável por conter as regras de negócio e acesso a dados;
 - libs (JAR): Responsável por conter classes utilitárias, bibliotecas do projeto e configurações globais;
