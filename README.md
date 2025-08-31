@@ -29,30 +29,30 @@ Foram aplicados os conceitos básicos de orientação a objetos como:
 
 ### SOLID
 Também foram aplicados Princípios SOLID como:
-- Simple Responsability Principal
-- Open Closed Principal
-- Liskov Substitution Principal
-- Interface Segregation Principal
-- Dependency Inversion Principal
+- Simple Responsability Principal;
+- Open Closed Principal;
+- Liskov Substitution Principal;
+- Interface Segregation Principal;
+- Dependency Inversion Principal.
 
 ### Design Patterns
 Também foram aplicados soluções de Design Patterns como:
 - Handlers de Exceções Globais utilizando ExceptionMapper;
 - DTO para validações e trafego de dados entre as camadas da aplicação;
-- Bean Validations para validações de campos
-- Repository para acesso aos dados
+- Bean Validations para validações de campos;
+- Repository para acesso aos dados.
 
 
 ### Tecnologias
 
-- JavaEE 8 (CDI, EJB, JAX-RS/RestEasy, JPA/Hibernate)
-- Java 11
-- JBoss EAP 7.4.x
-- Postgres
-- Jackson
-- Manven
-- Git
-- Slf4J
-- JUnit
-- Mockito
-- SonarQube
+- JavaEE 8 (CDI, EJB, JAX-RS/RestEasy, JPA/Hibernate);
+- Java 11;
+- JBoss EAP 7.4.x;
+- Postgres;
+- Jackson;
+- Maven;
+- Git;
+- Slf4J;
+- JUnit;
+- Mockito;
+- SonarQube.
