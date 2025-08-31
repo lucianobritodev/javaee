@@ -1,7 +1,7 @@
 package com.lucianobrito.poc.javaee.controllers;
 
-import com.lucianobrito.poc.javaee.services.domain.dtos.UsuarioDto;
-import com.lucianobrito.poc.javaee.services.domain.services.UsuarioService;
+import com.lucianobrito.poc.javaee.domain.dtos.UsuarioDto;
+import com.lucianobrito.poc.javaee.domain.services.UsuarioService;
 import lombok.NoArgsConstructor;
 
 import javax.enterprise.context.RequestScoped;
@@ -49,7 +49,7 @@ public class UsuarioController {
     @PUT
     @Path("/v1/{id}")
     @Produces(MediaType.APPLICATION_JSON)
-    public Response create(@PathParam("id") Long id,  UsuarioDto usuarioDto) {
+    public Response update(@PathParam("id") Long id,  UsuarioDto usuarioDto) {
         return Response.ok(usuarioService.update(id, usuarioDto)).build();
     }
 

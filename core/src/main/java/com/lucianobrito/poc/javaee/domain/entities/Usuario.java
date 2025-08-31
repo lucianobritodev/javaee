@@ -1,7 +1,7 @@
-package com.lucianobrito.poc.javaee.services.domain.entities;
+package com.lucianobrito.poc.javaee.domain.entities;
 
 
-import com.lucianobrito.poc.javaee.services.domain.dtos.UsuarioDto;
+import com.lucianobrito.poc.javaee.domain.dtos.UsuarioDto;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;

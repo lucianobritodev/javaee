@@ -1,4 +1,4 @@
-package com.lucianobrito.poc.javaee.services.domain.repositories;
+package com.lucianobrito.poc.javaee.domain.repositories;
 
 
 import javax.persistence.EntityManager;

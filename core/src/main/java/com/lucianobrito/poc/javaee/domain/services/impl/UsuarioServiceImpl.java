@@ -1,11 +1,11 @@
-package com.lucianobrito.poc.javaee.services.domain.services.impl;
+package com.lucianobrito.poc.javaee.domain.services.impl;
 
 import com.lucianobrito.poc.javaee.exceptions.errors.ResourceNotFoundException;
-import com.lucianobrito.poc.javaee.services.domain.dtos.UsuarioDto;
-import com.lucianobrito.poc.javaee.services.domain.entities.Usuario;
-import com.lucianobrito.poc.javaee.services.domain.repositories.UsuarioRepository;
-import com.lucianobrito.poc.javaee.services.domain.services.BaseService;
-import com.lucianobrito.poc.javaee.services.domain.services.UsuarioService;
+import com.lucianobrito.poc.javaee.domain.dtos.UsuarioDto;
+import com.lucianobrito.poc.javaee.domain.entities.Usuario;
+import com.lucianobrito.poc.javaee.domain.repositories.UsuarioRepository;
+import com.lucianobrito.poc.javaee.domain.services.BaseService;
+import com.lucianobrito.poc.javaee.domain.services.UsuarioService;
 import lombok.NoArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 

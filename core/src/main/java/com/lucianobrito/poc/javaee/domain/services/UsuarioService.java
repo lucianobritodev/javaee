@@ -1,6 +1,6 @@
-package com.lucianobrito.poc.javaee.services.domain.services;
+package com.lucianobrito.poc.javaee.domain.services;
 
-import com.lucianobrito.poc.javaee.services.domain.dtos.UsuarioDto;
+import com.lucianobrito.poc.javaee.domain.dtos.UsuarioDto;
 
 import java.util.List;
 

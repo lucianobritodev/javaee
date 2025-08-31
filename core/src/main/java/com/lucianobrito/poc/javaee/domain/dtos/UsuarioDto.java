@@ -1,4 +1,4 @@
-package com.lucianobrito.poc.javaee.services.domain.dtos;
+package com.lucianobrito.poc.javaee.domain.dtos;
 
 
 import com.fasterxml.jackson.annotation.JsonProperty;

@@ -1,4 +1,4 @@
-package com.lucianobrito.poc.javaee.services.domain.services;
+package com.lucianobrito.poc.javaee.domain.services;
 
 import com.lucianobrito.poc.javaee.exceptions.errors.BusinessException;
 import lombok.extern.slf4j.Slf4j;

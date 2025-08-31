@@ -1,6 +1,6 @@
-package com.lucianobrito.poc.javaee.services.domain.repositories;
+package com.lucianobrito.poc.javaee.domain.repositories;
 
-import com.lucianobrito.poc.javaee.services.domain.entities.Usuario;
+import com.lucianobrito.poc.javaee.domain.entities.Usuario;
 
 import javax.ejb.Stateless;
 
