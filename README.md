@@ -1,4 +1,4 @@
-# JavaEE
+# POC JavaEE 8
 
 ## Descrição
 
