@@ -6,7 +6,7 @@
 
     <parent>
         <groupId>com.lucianobrito.poc</groupId>
-        <artifactId>javaee</artifactId>
+        <artifactId>poc-javaee-8</artifactId>
         <version>${revision}</version>
         <relativePath>../pom.xml</relativePath>
     </parent>

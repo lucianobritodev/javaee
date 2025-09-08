@@ -4,8 +4,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
+    <!-- Implantável em JBOSS EAP 7.4.23GA -->
     <groupId>com.lucianobrito.poc</groupId>
-    <artifactId>javaee</artifactId>
+    <artifactId>poc-javaee-8</artifactId>
     <version>${revision}</version>
     <name>pom</name>
     <description>javaee - pom</description>
@@ -18,7 +19,6 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.target>${java.version}</maven.compiler.target>
         <maven.compiler.source>${java.version}</maven.compiler.source>
-        <junit.version>5.11.0</junit.version>
         <postgres.version>42.7.7</postgres.version>
         <jackson.version>2.19.1</jackson.version>
         <jacoco.version>0.8.12</jacoco.version>
